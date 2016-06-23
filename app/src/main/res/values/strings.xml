@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Сергей Ефремов</string>
+    <string name="string_rating">Рейтинг</string>
+    <string name="string_code_lines">Строк кода</string>
+    <string name="string_projects_count">Проекта</string>
+    <string name="string_phone_number">Мобильный</string>
+    <string name="string_email">E-mail</string>
+    <string name="string_vk_profile">Профиль в VK</string>
+    <string name="string_repository">Репозиторий</string>
+    <string name="string_about">О себе</string>
+
 </resources>

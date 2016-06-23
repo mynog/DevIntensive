@@ -8,4 +8,104 @@
         <item name="colorAccent">@color/color_accent</item>
     </style>
 
+    <!-- Main user information -->
+    <style name="main_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_gray</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/spacing_small_8</item>
+        <item name="android:paddingBottom">@dimen/spacing_small_8</item>
+    </style>
+
+    <style name="main_info.element">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/spacing_small_8</item>
+        <item name="android:paddingRight">@dimen/spacing_small_8</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="main_info.element.side" parent="main_info.element">
+        <item name="android:layout_weight">0.3</item>
+    </style>
+
+    <style name="main_info.element.central" parent="main_info.element">
+        <item name="android:layout_weight">0.4</item>
+    </style>
+
+    <style name="main_info.separator">
+        <item name="android:layout_width">@dimen/size_separator_1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_gray_light</item>
+    </style>
+
+    <style name="main_info.text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="main_info.title" parent="main_info.text">
+        <item name="android:textSize">@dimen/font_small_12</item>
+    </style>
+
+    <style name="main_info.value" parent="main_info.text">
+        <item name="android:textSize">@dimen/font_large_18</item>
+    </style>
+
+    <!-- Detail user information -->
+    <style name="detail_info_element">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/spacing_very_small_4</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_very_small_4</item>
+    </style>
+
+    <style name="detail_info_content">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/size_large_72</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_medium_32</item>
+        <item name="android:layout_marginRight">@dimen/spacing_normal_16</item>
+    </style>
+
+    <style name="detail_info_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:enabled">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="detail_info_separator_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_separator_1</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_larger_72</item>
+        <item name="android:background">@color/color_gray_light</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">@dimen/size_small_24</item>
+        <item name="android:layout_height">@dimen/size_small_24</item>
+        <item name="android:layout_marginTop">@dimen/spacing_medial_24</item>
+    </style>
+
+    <style name="Icon.Left" parent="Icon">
+        <item name="android:layout_gravity">top|left</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_normal_16</item>
+    </style>
+
+    <style name="Icon.Right" parent="Icon">
+        <item name="android:layout_gravity">top|right</item>
+        <item name="android:layout_marginRight">@dimen/spacing_medium_32</item>
+    </style>
 </resources>
