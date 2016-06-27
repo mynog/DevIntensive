@@ -23,7 +23,7 @@
 
                 <TextView
                     style="@style/main_info.title"
-                    android:text="@string/string_rating" />
+                    android:text="@string/string_main_info_my_rating" />
             </LinearLayout>
 
             <LinearLayout style="@style/main_info.separator"></LinearLayout>
@@ -37,7 +37,7 @@
 
                 <TextView
                     style="@style/main_info.title"
-                    android:text="@string/string_code_lines" />
+                    android:text="@string/string_main_info_my_code_lines" />
             </LinearLayout>
 
             <LinearLayout style="@style/main_info.separator"></LinearLayout>
@@ -51,7 +51,7 @@
 
                 <TextView
                     style="@style/main_info.title"
-                    android:text="@string/string_projects_count" />
+                    android:text="@string/string_main_info_my_projects_count" />
             </LinearLayout>
         </LinearLayout>
 
@@ -71,7 +71,7 @@
                     <EditText
                         android:id="@+id/mobile_phone_number"
                         style="@style/detail_info_text"
-                        android:hint="@string/string_phone_number"
+                        android:hint="@string/string_main_info_my_phone_number"
                         android:inputType="phone"
                         android:text="+7 905 123-45-67" />
                 </android.support.design.widget.TextInputLayout>
@@ -100,7 +100,7 @@
                     <EditText
                         android:id="@+id/email"
                         style="@style/detail_info_text"
-                        android:hint="@string/string_email"
+                        android:hint="@string/string_main_info_my_email"
                         android:inputType="textEmailAddress"
                         android:text="efremov_su@mail.ru" />
                 </android.support.design.widget.TextInputLayout>
@@ -129,7 +129,7 @@
                     <EditText
                         android:id="@+id/vk_profile"
                         style="@style/detail_info_text"
-                        android:hint="@string/string_vk_profile"
+                        android:hint="@string/string_main_info_my_vk_profile"
                         android:inputType="textUri"
                         android:text="vk.com/mynog" />
                 </android.support.design.widget.TextInputLayout>
@@ -158,7 +158,7 @@
                     <EditText
                         android:id="@+id/repository_url"
                         style="@style/detail_info_text"
-                        android:hint="@string/string_repository"
+                        android:hint="@string/string_main_info_my_repository"
                         android:inputType="textUri"
                         android:text="github.com/mynog/DevIntensive" />
                 </android.support.design.widget.TextInputLayout>
@@ -193,7 +193,7 @@
                     <EditText
                         android:id="@+id/about_me"
                         style="@style/detail_info_text"
-                        android:hint="@string/string_about"
+                        android:hint="@string/string_main_info_about_me"
                         android:inputType="textMultiLine"
                         android:text="Scientia potentia est" />
                 </android.support.design.widget.TextInputLayout>
