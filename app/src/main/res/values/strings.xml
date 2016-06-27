@@ -10,5 +10,7 @@
     <string name="string_main_info_about_me">О себе</string>
     <string name="string_menu_my_team">Моя команда</string>
     <string name="string_menu_my_profile">Мой профиль</string>
+    <string name="string_profile_email">efremov_su@mail.ru</string>
+    <string name="string_profile_username">Сергей Ефремов</string>
 
 </resources>
