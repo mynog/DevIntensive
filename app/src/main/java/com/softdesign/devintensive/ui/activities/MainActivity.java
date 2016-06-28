@@ -6,22 +6,15 @@ import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
-import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.utils.ConstantManager;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -47,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initViews() {
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.widget_toolbar);
     }
 
     private void setupDrawer() {
@@ -63,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void setupMenuAvatar() {    //setup menu avatar with rounded corners from picture
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
         if (navigationView != null) {
-            ImageView mRoundedAvatar_img = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.rounded_avatar);
+            ImageView mRoundedAvatar_img = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.image_user_avatar);
             Bitmap src = BitmapFactory.decodeResource(getResources(), R.drawable.user_avatar_120x120);
             RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(getResources(), src);
             dr.setCornerRadius(Math.max(src.getWidth(), src.getHeight()) / 2.0f);

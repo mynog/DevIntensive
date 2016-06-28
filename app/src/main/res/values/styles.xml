@@ -13,14 +13,14 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <!-- Main user information -->
     <style name="main_info">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/size_huge_112</item>
+        <item name="android:layout_height">@dimen/size_large_80</item>
         <item name="android:background">@color/color_gray</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center</item>
@@ -31,7 +31,7 @@
         <item name="android:orientation">vertical</item>
         <item name="android:paddingLeft">@dimen/spacing_small_8</item>
         <item name="android:paddingRight">@dimen/spacing_small_8</item>
-        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingTop">@dimen/spacing_small_6</item>
         <item name="android:paddingBottom">0dp</item>
     </style>
 
@@ -47,6 +47,8 @@
         <item name="android:layout_width">@dimen/size_separator_1</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/color_gray_light</item>
+        <item name="android:paddingTop">@dimen/spacing_very_small_4</item>
+        <item name="android:paddingBottom">@dimen/spacing_very_small_4</item>
     </style>
 
     <style name="main_info.text">
@@ -130,6 +132,23 @@
     <style name="navigation_bar_text.email" parent="navigation_bar_text">
         <item name="android:textColor">@color/color_white</item>
         <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+
+    <style name="circle_user_avatar">
+        <item name="android:layout_width">@dimen/size_medium_64</item>
+        <item name="android:layout_height">@dimen/size_medium_64</item>
+        <item name="android:layout_marginTop">@dimen/spacing_normal_16</item>
+    </style>
+
+    <style name="drawer_header_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">172dp</item>
+        <item name="android:background">@drawable/header_bg</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/size_small_8</item>
+        <item name="android:paddingLeft">@dimen/spacing_normal_16</item>
+        <item name="android:paddingRight">@dimen/spacing_normal_16</item>
+        <item name="android:paddingTop">@dimen/spacing_medial_24</item>
     </style>
 
 </resources>

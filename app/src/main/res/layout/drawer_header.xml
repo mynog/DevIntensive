@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="172dp"
-    android:background="@drawable/header_bg"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/size_small_8"
-    android:paddingLeft="@dimen/spacing_normal_16"
-    android:paddingRight="@dimen/spacing_normal_16"
-    android:paddingTop="@dimen/spacing_medial_24">
+                style="@style/drawer_header_relative">
 
     <ImageView
-        android:id="@+id/rounded_avatar"
-        android:layout_width="@dimen/size_medium_64"
-        android:layout_height="@dimen/size_medium_64"
-        android:layout_marginTop="@dimen/spacing_normal_16"
-        />
+        android:id="@+id/image_user_avatar"
+        style="@style/circle_user_avatar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,12 +14,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/menu_userName_txt"
+            android:id="@+id/drawer_username"
             style="@style/navigation_bar_text.username"
             android:text="@string/app_name"/>
 
         <TextView
-            android:id="@+id/menu_userEmail_txt"
+            android:id="@+id/drawer_user_email"
             style="@style/navigation_bar_text.email"
             android:text="@string/string_profile_email"/>
     </LinearLayout>
