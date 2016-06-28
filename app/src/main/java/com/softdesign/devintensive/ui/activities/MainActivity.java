@@ -1,21 +1,32 @@
 package com.softdesign.devintensive.ui.activities;
 
-import android.graphics.Color;
-import android.net.Uri;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.PersistableBundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.utils.ConstantManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +34,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate");
 
+        initViews();
+//        setupDrawer();
+//        loadUserInfoValue();
+
+        setupToolbar();
+
         if (savedInstanceState == null) {
 
         } else {
         }
     }
 
-    @Override
+    private void initViews() {
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+    }
+
+    private void setupDrawer() {
+
+    }
+
+      @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
     }
+
+    public void setupMenuAvatar() {    //setup menu avatar with rounded corners from picture
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        if (navigationView != null) {
+            ImageView mRoundedAvatar_img = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.rounded_avatar);
+            Bitmap src = BitmapFactory.decodeResource(getResources(), R.drawable.user_avatar_120x120);
+            RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(getResources(), src);
+            dr.setCornerRadius(Math.max(src.getWidth(), src.getHeight()) / 2.0f);
+            mRoundedAvatar_img.setImageDrawable(dr);
+        }
+    }
+
 
     @Override
     protected void onStop() {
@@ -94,5 +131,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     public void onClick(View v) {
+    }
+
+    public void setupToolbar() {
+        Log.d(TAG, "--- 1 ---");
+        Log.d(TAG, mToolbar.toString());
+        setSupportActionBar(mToolbar);
+        Log.d(TAG, "--- 2 ---");
+        ActionBar actionBar = getSupportActionBar();
+        Log.d(TAG, "--- 3 ---");
+        if (actionBar != null) {
+            Log.d(TAG, "--- 4 ---");
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+            Log.d(TAG, "--- 5 ---");
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            Log.d(TAG, "--- 6 ---");
+        }
+        Log.d(TAG, "--- 7 ---");
     }
 }

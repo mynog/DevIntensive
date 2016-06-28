@@ -11,6 +11,7 @@
     <dimen name="size_medium_64">64dp</dimen>
     <dimen name="size_large_72">72dp</dimen>
     <dimen name="size_large_80">80dp</dimen>
+    <dimen name="size_huge_112">112dp</dimen>
 
     <!-- font sizes -->
     <dimen name="font_small_12">12sp</dimen>
@@ -44,5 +45,7 @@
     <!-- other -->
     <dimen name="profile_image_size">256dp</dimen>
     <dimen name="toolbar_top_offset">0dp</dimen>
+    <dimen name="fab_right_space">8dp</dimen>
+
 
 </resources>
