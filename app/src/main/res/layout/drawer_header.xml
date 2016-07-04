@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/drawer_header_relative">
+
+    <ImageView
+        android:id="@+id/image_user_avatar"
+        style="@style/circle_user_avatar"
+        android:src="@drawable/user_avatar_120x120"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_medium_56"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/drawer_username"
+            style="@style/navigation_bar_text.username"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/drawer_user_email"
+            style="@style/navigation_bar_text.email"
+            android:text="@string/string_profile_email"/>
+    </LinearLayout>
+
+</RelativeLayout>
